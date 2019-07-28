@@ -3,7 +3,7 @@
 		<div class="goods-top clearfix">
 			<h3 class="top-title">搭配</h3>
 			<ul class="top-sub">
-				<li v-for="sub in subs"
+				<li v-for="sub in dataList"
 					:class="{'active': topSubStatus === sub.key}"
 					@mouseenter="topSubEnter(sub.key)">{{sub.name}}</li>
 			</ul>
@@ -19,9 +19,11 @@
 import GoodsTop from './GoodsTop'
 import GoodsLeft from './GoodsLeft'
 import GoodsRight from './GoodsRight2'
+import {UserQryAction} from "../api/user";
 export default {
 	data () {
 		return {
+      dataList: [],
 			topTitle: '搭配',
 			subs: [
 				{name: '热门', key: 'hotGoods'},
@@ -110,11 +112,21 @@ export default {
 		}
 	},
 	mounted(){ //Vue2.0 替换了之前的ready，详见文档生命周期函数mounted
-    this.currGoods = this.hotGoods
+    this.currGoods = this.hotGoods;
+    this.UserQry();
   },
 	methods: {
+    UserQry() {
+      var _self = this;
+      UserQryAction().then(res => {
+        const data = res.data;
+        _self.dataList = res.data;
+        // this.dataList.name=data.name;
+        // this.dataList.key = data.email;
+      });
+    },
 		topSubEnter (key) {
-			this.topSubStatus = key
+			this.topSubStatus = key;
 			this.currGoods = this[key]
 		}
 	},

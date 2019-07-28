@@ -1,7 +1,7 @@
 <template>
 	<div class="recommend-container">
 		<div class="recommend-header">
-			<h2 class="title">小米明星单品</h2>
+			<h2 class="title">明星单品</h2>
 			<div class="control-part">
 				<span
 					@click="playPre"

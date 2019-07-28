@@ -64,7 +64,7 @@ export default {
           ]
         },
         {
-          title: '服务支持', 
+          title: '服务支持',
           text: [
             {title: '售后政策', link: 'https://www.mi.com/service/exchange'},
             {title: '自助服务', link: 'http://fuwu.mi.com/'},
@@ -72,7 +72,7 @@ export default {
           ]
         },
         {
-          title: '线下门店', 
+          title: '线下门店',
           text: [
             {title: '小米之家', link: 'https://www.mi.com/c/xiaomizhijia/'},
             {title: '服务网点', link: 'https://www.mi.com/static/maintainlocation/'},
@@ -80,7 +80,7 @@ export default {
           ]
         },
         {
-          title: '关于小米', 
+          title: '关于小米',
           text: [
             {title: '了解小米', link: 'https://www.mi.com/about/'},
             {title: '加入小米', link: 'http://hr.xiaomi.com/'},
@@ -88,7 +88,7 @@ export default {
           ]
         },
         {
-          title: '关注我们', 
+          title: '关注我们',
           text: [
             {title: '新浪微博', link: 'http://weibo.com/xiaomishangcheng'},
             {title: '小米部落', link: 'http://xiaoqu.qq.com/mobile/share/index.html?url=http%3A%2F%2Fxiaoqu.qq.com%2Fmobile%2Fbarindex.html%3Fwebview%3D1%26type%3D%26source%3Dindex%26_lv%3D25741%26sid%3D%26_wv%3D5123%26_bid%3D128%26%23bid%3D10525%26from%3Dwechat'},
@@ -96,7 +96,7 @@ export default {
           ]
         },
         {
-          title: '特色服务', 
+          title: '特色服务',
           text: [
             {title: 'F 码通道', link: 'https://order.mi.com/queue/f2code'},
             {title: '礼物码', link: 'https://www.mi.com/giftcode/'},
