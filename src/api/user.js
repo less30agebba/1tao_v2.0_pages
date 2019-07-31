@@ -1,4 +1,4 @@
-import HttpRequest from '@/axios/api.request'
+import HttpRequest from '@/axios/api.request';
 
 export const UserQryAction = () => {
   return HttpRequest.request({

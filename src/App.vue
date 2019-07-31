@@ -6,20 +6,16 @@
     <Slide/>
     <TopSub/>
     <GoodsStar/>
-    <div id="main-page">
+<!--    <div id="main-page">-->
       <GoodsHome/>
-      <GoodsIntelligence/>
-      <GoodsCollocation/>
-      <GoodsParts/>
-      <GoodsAround/>
       <Recommend/>
       <HotProduct/>
       <GoodsContent/>
       <VideoShow/>
-    </div>
+<!--    </div>-->
     <FooterShow/>
-    
-    
+
+
   </div>
 </template>
 
@@ -68,7 +64,7 @@ export default {
     width: 100%;
     height: 100%;
   }
-  
+
   * {
     margin: 0;
     padding: 0;
